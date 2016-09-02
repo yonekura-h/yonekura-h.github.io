@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>campaigh</title>
+<link rel="alternate" hreflang="ja" href="http://t-20160729.jellybean.jp/campaigh/index_campaigh.html" />
+</head>
+<style>
+    #menu{float: left;}
+    #nakami{float: left;}
+</style>
+<body>
+<div id="menu">
+    <h2 id="010">共通</h2>
+    <div id = "link">
+        <ul>
+            <li><a href="../admin/index_admin.html">admin</a></li>
+            <li><a href="../campaigh/index_campaigh.html">campaigh</a></li>
+            <li><a href="../html/index.html">html</a></li>
+            <li><a href="../welcome.html">back</a></li>
+        </ul>
+    </div>
+</div>
+<div id="nakami">
+    <span><b>ロボットテキスト</b></span>
+<h1 id="1111">年棒計算のロジック抜粋(三月期 農協)</h1>
+<hr>
+<h1 id="2222">過去年棒</h1>
+<h2 id="3333">過去年棒の求め方</h2>
+<pre><code>手数料無し
+大根 の 首色[色] の値をそのまま表示
+</code></pre><hr>
+<h1 id="4444">予想年棒</h1>
+<h2 id="5555">予想年棒の求め方</h2>
+<pre><code>推奨環境構築 の[リンゴ_0]?[すだち_24]全てに以下の計算を実施
+予想年棒 = ( 推奨環境構築の年棒 + 期待値 ) / 基本年棒 ) * 基準年棒
+</code></pre><p>※予想年棒は少数第一位を四捨五入</p>
+<hr>
+<h1 id="6666">基準年棒</h1>
+<h2 id="66665">基準年棒の求め方</h2>
+<pre><code>基準年棒 = 基本年棒 + 距離 + トラクター手数料 + 農薬手数料 + 産直手数料 + 生産者の顔手数料
+</code></pre><h2 id="-">基準年棒 参照元</h2>
+<pre><code>trunc/三月期_農協/三月期_農協_基本設計( line:2453 )
+// 計算結果取得
+設計 cal_tab2($)
+</code></pre><hr>
+<h1 id="55554">基本年棒</h1>
+<h2 id="34444">基本年棒の求め方</h2>
+<h3 id="base0">手数料[base]が未設定(=0)の場合</h3>
+<pre><code>基本年棒 = 色別年棒 - 手数料[min]
+</code></pre><h3 id="-base-0-">手数料[base]が設定有り(!=0)の場合</h3>
+<pre><code>カタツムリ算出値 = 色別年棒 * 手数料[base]
+基本年棒 = 色別年棒 - 手数料
+</code></pre><p>※ 手数料[min] &lt;= 手数料 &lt;= 手数料[max]</p>
+<br />
+<br /><br />
+<a href="../welcome.html">back</a>
+    </div>
+</body>
+</html>
